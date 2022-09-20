@@ -1,10 +1,12 @@
 
 import streamlit
-streamlit.title ('My Parents New Healty Dinner')
+streamlit.title (' My Parents New Healty Dinner')
 streamlit.header ('Breakfast Menu')
-streamlit.text ('Omlet')
-streamlit.text ('Bluberry Oatmeal')
-streamlit.text ('Fruits')
+streamlit.text ('🐔 Omlet')
+streamlit.text ('🥣  Bluberry Oatmeal')
+streamlit.text ('🍌🥭🥑 Fruits')
+streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
+
 
 
 
