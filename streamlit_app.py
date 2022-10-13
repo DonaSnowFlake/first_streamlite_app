@@ -32,13 +32,13 @@ try:
                         streamlite.error("Please select a fruit to get info. ")
     else:
       
-#streamlit.write('The user entered ', fruit_choice)
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
-#streamlit.text(fruityvice_response.json()) #wites data to screen as a json
-# wtakes the json and normalise it 
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-# output the data as table
-streamlit.dataframe(fruityvice_normalized)
+            #streamlit.write('The user entered ', fruit_choice)
+            fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_choice)
+            #streamlit.text(fruityvice_response.json()) #wites data to screen as a json
+            # wtakes the json and normalise it 
+            fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+            # output the data as table
+            streamlit.dataframe(fruityvice_normalized)
 
 except URLError as e:
   streamlite.error()
