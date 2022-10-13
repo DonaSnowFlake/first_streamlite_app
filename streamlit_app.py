@@ -29,7 +29,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 try:
     fruit_choice = streamlit.text_input('What fruit would you like information about?')
     if not fruit_choice:
-                        streamlite.error("Please select a fruit to get info. ")
+                        streamlit.error("Please select a fruit to get info. ")
     else:
       
             #streamlit.write('The user entered ', fruit_choice)
@@ -40,7 +40,7 @@ try:
             # output the data as table
             streamlit.dataframe(fruityvice_normalized)
 except URLError as e:
-  streamlite.error()
+  streamlit.error()
 
 #don't run anithybg past here while we troubleshout
 streamlite.stop()
