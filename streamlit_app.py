@@ -44,7 +44,7 @@ except URLError as e:
   streamlite.error()
 
 #don't run anithybg past here while we troubleshout
-streamlite.stop()
+#streamlite.stop()
 
 # connect to snowflake database
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
